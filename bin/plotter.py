@@ -61,7 +61,7 @@ for files in listdir('ScalarFields'):
 log = np.genfromtxt("Error/erros_dif_sqrt.csv",delimiter=',')
 
 dH = log[:,1]
-error = log[:,3]
+error = log[:,3] 
 print("Calculating error decay")
 order = (np.log(error[-1]) - np.log(error[0])) / (np.log(dH[-1]) - np.log(dH[0]))
 
